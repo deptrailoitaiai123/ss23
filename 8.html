@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = prompt("mời nhập số ");
+      if (number > 2) {
+        let count = 0;
+        for (let i = 2; i < Math.sqrt(number); i++) {
+          if (number % i == 0) {
+            count++;
+          }
+        }
+        if (count === 0) {
+          console.log("đây là số nguyên tố " + number);
+        } else if (count === 1) {
+          console.log("đây ko phải  số nguyên tố ");
+        }
+      } else {
+        console.log("đây ko phải số nguyên tố");
+      }
+    </script>
+  </body>
+</html>
